@@ -1,0 +1,33 @@
+{
+  "auth" : "github:codesections",
+  "authors" : [
+    "Daniel Sockwell"
+  ],
+  "build-depends" : [ ],
+  "depends" : [
+    "Pod::Literate",
+    "Pod::Load",
+    "Pod::To::Markdown"
+  ],
+  "description" : "Weave documentation from Raku source",
+  "license" : "Artistic-2.0",
+  "name" : "Pod::Weave",
+  "perl" : "6.d",
+  "provides" : {
+    "Pod::Weave" : "lib/Pod/Weave.rakumod"
+  },
+  "resources" : [ ],
+  "source-url" : "https://github.com/codesections/pod-weave.git",
+  "support" : {
+    "email" : "daniel@codesections.com"
+  },
+  "tags" : [
+    "literate programming",
+    "pod",
+    "weave",
+    "tangle",
+    "documentation"
+  ],
+  "test-depends" : [ ],
+  "version" : "0.0.1"
+}
