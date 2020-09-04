@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/codesections/pod-weave/workflows/test/badge.svg)](https://github.com/codesections/pod-weave/actions)
+
 NAME
 ====
 
@@ -5,6 +7,12 @@ Pod::Weave - Weave documentation from Raku source
 
 SYNOPSIS
 ========
+
+Installation (assuming you already have [Raku](ttps://raku.org/downloads) and [zef](https://github.com/ugexe/zef) installed):
+
+```sh
+zef install Pod::Weave
+```
 
 You can use Pod::Weave via it's command-line tool, `pod-weave`
 

@@ -6,6 +6,13 @@ Pod::Weave - Weave documentation from Raku source
 
 =head1 SYNOPSIS
 
+Installation (assuming you already have L<Raku|ttps://raku.org/downloads> and
+L<zef|https://github.com/ugexe/zef> installed):
+
+=begin code :lang<sh>
+zef install Pod::Weave
+=end code
+
 You can use Pod::Weave via it's command-line tool, C<pod-weave>
 
 =begin code :lang<sh>
