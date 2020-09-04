@@ -17,33 +17,35 @@ our sub weave-html(IO::Path $file --> Str) is export {
             EOF
     }).join("\n")
     ==> load()
-    ==> {Pod::To::HTML.render($_)}()
+    # If we want to allow customization, switch to the *sub* render(IO.Path, named-args)
+    ==> { Pod::To::HTML.render($_) }()
 }
 
 =begin pod
 
 =head1 NAME
 
-Pod::Weave::To::Text - Weave plaintext documentation from Raku source
+Pod::Weave::To::HTML - Weave HTML documentation from Raku source
 
 =head1 SYNOPSIS
 
-You can use Pod::Weave::To::Text as a library:
+You can use Pod::Weave::To::HTML as a library:
 
 =begin code :lang<raku>
 
-use Pod::Weave::To::Text;
-weave-text($filename.IO);
+use Pod::Weave::To::HTML;
+weave-html($filename.IO);
 
 =end code
 
 =head1 DESCRIPTION
 
-Pod::Weave::To::Text renders plaintext documentation from Raku source files.  The
-documentation consists of Pod blocks (rendered normally) interwoven with code-fenced Code
-blocks containing all of the source code from the Raku file. The goal of doing so is to
-support basic L<literate programming|https://en.wikipedia.org/wiki/Literate_programming>
-in Raku.
+Pod::Weave::To::HTML renders HTML documentation from Raku source files.  The documentation
+consists of Pod blocks (rendered normally) interwoven with C«<pre></pre>» tags containing
+the source code from the Raku file.  Pod::Weave::To::HTML currently formats output in the
+same way as C<raku --doc=HTML> and does not allow for customization (customization may be
+added in a future version).  Pod::Weave::To::HTML's goal is to support basic L<literate
+programming|https://en.wikipedia.org/wiki/Literate_programming> in Raku.
 
 For additional details, please see the announcement blog post:
 L<www.codesections.com/blog/weaving-raku|https://www.codesections.com/blog/weaving-raku>.

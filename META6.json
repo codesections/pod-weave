@@ -17,7 +17,7 @@
   "perl" : "6.d",
   "provides" : {
     "Pod::Weave" : "lib/Pod/Weave.rakumod",
-    "Pod::Weave::To::HTML": "lib/Pod/Weave/To/HTML.rakumod",
+    "Pod::Weave::To::HTML" : "lib/Pod/Weave/To/HTML.rakumod",
     "Pod::Weave::To::Markdown" : "lib/Pod/Weave/To/Markdown.rakumod",
     "Pod::Weave::To::Text" : "lib/Pod/Weave/To/Text.rakumod"
   },
