@@ -7,7 +7,9 @@
   "depends" : [
     "Pod::Literate",
     "Pod::Load",
-    "Pod::To::Markdown"
+    "Pod::To::HTML",
+    "Pod::To::Markdown",
+    "Pod::To::Text"
   ],
   "description" : "Weave documentation from Raku source",
   "license" : "Artistic-2.0",
@@ -15,7 +17,9 @@
   "perl" : "6.d",
   "provides" : {
     "Pod::Weave" : "lib/Pod/Weave.rakumod",
-    "Pod::Weave::To::Markdown" : "lib/Pod/Weave/To/Markdown.rakumod"
+    "Pod::Weave::To::HTML": "lib/Pod/Weave/To/HTML.rakumod",
+    "Pod::Weave::To::Markdown" : "lib/Pod/Weave/To/Markdown.rakumod",
+    "Pod::Weave::To::Text" : "lib/Pod/Weave/To/Text.rakumod"
   },
   "resources" : [ ],
   "source-url" : "https://github.com/codesections/pod-weave.git",
