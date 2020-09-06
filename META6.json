@@ -5,10 +5,10 @@
   ],
   "build-depends" : [ ],
   "depends" : [
-    "Pod::Literate",
-    "Pod::Load",
-    "Pod::To::HTML",
-    "Pod::To::Markdown",
+    "Pod::Literate:auth<github:codesections>",
+    "Pod::Load:ver<0.5.2>",
+    "Pod::To::HTML:auth<github:Raku>",
+    "Pod::To::Markdown:ver<v0.1.4>",
     "Pod::To::Text"
   ],
   "description" : "Weave documentation from Raku source",
@@ -34,5 +34,5 @@
     "documentation"
   ],
   "test-depends" : [ ],
-  "version" : "0.0.1"
+  "version" : "0.0.2"
 }
