@@ -1,38 +1,41 @@
 {
-  "auth" : "github:codesections",
-  "authors" : [
+  "auth": "github:codesections",
+  "authors": [
     "Daniel Sockwell"
   ],
-  "build-depends" : [ ],
-  "depends" : [
+  "build-depends": [
+  ],
+  "depends": [
     "Pod::Literate:auth<github:codesections>",
     "Pod::Load:ver<0.5.2>",
     "Pod::To::HTML:auth<github:Raku>",
-    "Pod::To::Markdown:ver<v0.1.4>",
+    "Pod::To::Markdown:ver<0.2.1>",
     "Pod::To::Text"
   ],
-  "description" : "Weave documentation from Raku source",
-  "license" : "Artistic-2.0",
-  "name" : "Pod::Weave",
-  "perl" : "6.d",
-  "provides" : {
-    "Pod::Weave" : "lib/Pod/Weave.rakumod",
-    "Pod::Weave::To::HTML" : "lib/Pod/Weave/To/HTML.rakumod",
-    "Pod::Weave::To::Markdown" : "lib/Pod/Weave/To/Markdown.rakumod",
-    "Pod::Weave::To::Text" : "lib/Pod/Weave/To/Text.rakumod"
+  "description": "Weave documentation from Raku source",
+  "license": "Artistic-2.0",
+  "name": "Pod::Weave",
+  "perl": "6.d",
+  "provides": {
+    "Pod::Weave": "lib/Pod/Weave.rakumod",
+    "Pod::Weave::To::HTML": "lib/Pod/Weave/To/HTML.rakumod",
+    "Pod::Weave::To::Markdown": "lib/Pod/Weave/To/Markdown.rakumod",
+    "Pod::Weave::To::Text": "lib/Pod/Weave/To/Text.rakumod"
   },
-  "resources" : [ ],
-  "source-url" : "https://github.com/codesections/pod-weave.git",
-  "support" : {
-    "email" : "daniel@codesections.com"
+  "resources": [
+  ],
+  "source-url": "https://github.com/codesections/pod-weave.git",
+  "support": {
+    "email": "daniel@codesections.com"
   },
-  "tags" : [
+  "tags": [
     "literate programming",
     "pod",
     "weave",
     "tangle",
     "documentation"
   ],
-  "test-depends" : [ ],
-  "version" : "0.0.2"
+  "test-depends": [
+  ],
+  "version": "0.0.2"
 }
